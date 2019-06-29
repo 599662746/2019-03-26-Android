@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:background="@mipmap/login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="50dp"
+        android:text="小车启停控制："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="车号:"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/fragment_layout01_SP_KongZhi_rao"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:entries="@array/fragment_layout01_sp_values_rao"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="启停:"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/fragment_layout01_SW_KongZhi_rao"
+            android:track="@drawable/fragment_01_huagui_selector_rao"
+            android:thumb="@drawable/fragment_01_anniu_selector_rao"
+            android:layout_width="wrap_content"
+            android:textOn="启动"
+            android:textOff="停止"
+            android:showText="true"
+            android:gravity="center"
+            android:layout_height="20dp">
+
+        </Switch>
+
+    </LinearLayout>
+
+    <Switch
+        android:showText="true"
+        android:textOn="打开"
+        android:textOff="关闭"
+        android:track="@drawable/switch_01_selector_huagui"
+        android:thumb="@drawable/switch_01_selector_anniu"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+
+
+
+</LinearLayout>

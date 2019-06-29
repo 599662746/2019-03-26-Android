@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@mipmap/login"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="50sp"
+        android:text="小车账户查询："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="车号："
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/fragment_01_zhanghu_sp_cars_chaxun_rao"
+            android:entries="@array/fragment_zhanghu_sp_values_rao"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/fragment_layout01_Btn_ZhangHu_chaxun_rao"
+            android:textSize="30sp"
+            android:text=" 查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="50sp"
+        android:text="小车账户充值："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="车号："
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/fragment_01_zhanghu_sp_cars_chongzhi_rao"
+            android:entries="@array/fragment_zhanghu_sp_values_rao"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/fragment_01_zhanghu_ET_Monay_chongzhi_rao"
+            android:inputType="number"
+            android:hint="1-9999"
+            android:maxLength="4"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/fragment_layout01_Btn_ZhangHu_chongzhi_rao"
+            android:textSize="30sp"
+            android:text=" 充值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

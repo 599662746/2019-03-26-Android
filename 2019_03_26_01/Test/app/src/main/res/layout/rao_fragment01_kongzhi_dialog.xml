@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:alpha="0.7"
+    android:background="#353535"
+    android:layout_margin="200dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LL_01"
+        android:background="#414141"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/monay"
+            android:layout_margin="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:textColor="#f9f7f7"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:text="小车账户充值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/LL_01"
+        android:id="@+id/Vv_01"
+        android:background="#e92280be"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_title_rao"
+        android:layout_below="@id/Vv_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_below="@id/tv_title_rao"
+        android:background="#d5e6d5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
